@@ -42,8 +42,9 @@ CoC extensions installation:
 
 Sometimes, we might need to set keymapping to use <enter> to confirm completion. We need to add the next line to our *init.vim* file:
 
-`inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-
+`inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"`
+  
+  
 **Vim-devicons**
   
 Also, we might need to install *nerd fonts* to show correctly the icons. We can see somefonts here:
