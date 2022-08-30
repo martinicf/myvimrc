@@ -43,6 +43,9 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'tpope/vim-surround'
 
+"Vim icons
+Plug 'ryanoasis/vim-devicons'
+
 
 call plug#end()
 
@@ -54,7 +57,7 @@ let g:airline#extensions#tabline#enabled = 1  " Mostrar buffers abiertos (como p
 let g:NERDTreeChDirMode = 2
 let g:airline_powerline_fonts = 1
 
-colorscheme gruvbox
+colorscheme gruvbox-material
 
 set noshowmode 
 set nu rnu
@@ -62,6 +65,15 @@ set termguicolors
 set bg=dark
 
 map <F2> :NERDTreeToggle<CR>
+
+"Closing "vanilla-like" closing pairs
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 " Usar tab como indentación de 4 espacios
 filetype plugin indent on
