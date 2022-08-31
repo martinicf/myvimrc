@@ -43,12 +43,10 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 Plug 'sheerun/vim-polyglot'
-
 Plug 'tpope/vim-surround'
 
 "Vim icons
 Plug 'ryanoasis/vim-devicons'
-
 
 call plug#end()
 
@@ -61,13 +59,13 @@ let g:NERDTreeChDirMode = 2
 let g:airline_powerline_fonts = 1
 
 colorscheme gruvbox-material
-
 set noshowmode 
 set nu rnu
 set termguicolors
 set bg=dark
 
 map <F2> :NERDTreeToggle<CR>
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 "Closing "vanilla-like" closing pairs
 inoremap " ""<left>
