@@ -17,8 +17,11 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 "   " Using a non-default branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
+" Material Palette
+Plug 'sainnhe/gruvbox-material'
 
 "Airline status bar
 Plug 'vim-airline/vim-airline'
