@@ -51,3 +51,13 @@ Also, we might need to install *nerd fonts* to show correctly the icons. We can 
 https://github.com/ryanoasis/nerd-fonts#font-installation
 
 
+**Dependencies**
+
+Neovim needs some extra dependencies like nodejs, npm, python3 and pynvim. For the first three we can install it with just one line but we to install `pip`
+in order to install pynvim later:
+
+`sudo pacman -S nodejs npm python3 python-pip`
+
+And finally, we install pynvim:
+
+`pip install pynvim --upgrade`
